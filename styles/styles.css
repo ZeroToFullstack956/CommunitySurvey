@@ -24,7 +24,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 20vh;
+    padding-top: 22vh;
   }
   header {
     position: fixed;
@@ -51,7 +51,7 @@
   }
   h2 { 
     font-family: Century Schoolbook, Century Schoolbook L, Georgia, serif;
-    font-size: 8vmin;
+    font-size: 6vmin;
     text-align: center;
     margin: 2rem 3rem 0;
     mix-blend-mode: overlay;
@@ -130,16 +130,18 @@ ul{
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    border-radius: 180px/140px;
   }
   
   /* Modal Content */
   .modal-content {
     background-color: rgba(183, 179, 179, 0.8); 
     margin: 10% auto; /* 15% from the top and centered */
-    padding: 20px;
+    padding: 10px;
     border: 1px solid #888;
     width: 80vw; 
     border-radius: 180px/140px;
+    overflow: hidden;
   }
   
   /* The Close Button */
