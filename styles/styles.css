@@ -32,6 +32,7 @@
     text-align: center;
     color: rgb(0, 0, 0);
     transition: .4s;
+    background: rgba(0, 0, 0, 0.35);
   }
   /* header:hover {
     background: rgba(255,255,255,0.8);
@@ -48,6 +49,7 @@
     text-decoration: none;
     color: inherit;
     padding: 1rem;
+    font-size: 1.2em;
   }
   h2 { 
     font-family: Century Schoolbook, Century Schoolbook L, Georgia, serif;
@@ -63,8 +65,8 @@
     font-size: 5vmin;
     text-align: center;
     margin: 2rem 3rem 0;
-    mix-blend-mode: overlay;
-    color: #e4e0e0;
+    /* mix-blend-mode: overlay; */
+    color: #ffffff;
     font-weight: 100;
     padding-top: 5%;
   }
@@ -135,7 +137,7 @@ ul{
   
   /* Modal Content */
   .modal-content {
-    background-color: rgba(183, 179, 179, 0.8); 
+    background-color: rgba(183, 179, 179, 0.7); 
     margin: 10% auto; /* 15% from the top and centered */
     padding: 10px;
     border: 1px solid #888;
@@ -150,6 +152,7 @@ ul{
     float: right;
     font-size: 28px;
     font-weight: bold;
+    z-index: 3;
   }
   
   .close:hover,
