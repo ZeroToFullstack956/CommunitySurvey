@@ -137,7 +137,7 @@ ul{
   
   /* Modal Content */
   .modal-content {
-    background-color: rgba(183, 179, 179, 0.7); 
+    background-color: rgba(183, 179, 179, 0.9); 
     margin: 10% auto; /* 15% from the top and centered */
     padding: 10px;
     border: 1px solid #888;
