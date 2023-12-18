@@ -53,9 +53,26 @@ Construct a 99% confidence interval with 1% error for DEI viability:
 # n = .5(66564)
 # n = 33282
 
+## Next apply (FPC) Finite Population Correction, 
+# $$ n_{\text{corrected}} = \frac{n_{\text{initial}}}{1 + \frac{n_{\text{initial}} - 1}{N}} \ $$
+# - Since N is know from the U.S Census Bureau data.
+# N = 1,404,225
+# z = 2.576  
+# p = 0.5 
+# E = 0.01 
+# $$n_{\text{initial}}$$ = 33282
+# $$ n_{\text{corrected}} = \frac{33282}{1 + \frac{33282 - 1}{1,404,225}} \ $$
 
 **Required Sample Size:**
-33,282 surveys is our target. 🎯
+# - 32,511 surveys is our target. 🎯
+
+## Lastly Ill use stratification to applied equaly, on the basis of the overlapping nature of respondents among groups
+
+# Allocate approximately 32,511/3​ surveys to each group:
+# Required distribution = 
+# Students: 32,511 / 3 ≈ 10,837 surveys
+# Business Owners: 32,511 / 3 ≈ 10,837 surveys
+# Community Members: 32,511 / 3 ≈ 10,837 surveys
 
 ## 🌈 Features
 - **🖥 Landing Page**: Engaging webpage introducing the survey and encouraging participation.
