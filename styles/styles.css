@@ -24,19 +24,19 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 45vh;
+    
   }
   header {
     position: fixed;
     width: 100%;
     text-align: center;
-    color: white;
+    color: rgb(0, 0, 0);
     transition: .4s;
   }
-  header:hover {
+  /* header:hover {
     background: rgba(255,255,255,0.8);
     color: #000;
-  }
+  } */
   h1 {
     font-family: Moderne Sans, sans-serif;
     text-align: center;
@@ -55,16 +55,16 @@
     text-align: center;
     margin: 2rem 3rem 0;
     mix-blend-mode: overlay;
-    color: #fff;
-    font-weight: 100;
+    color: #000000;
+    font-weight: 900;
   }
   h3 { 
     font-family: Century Schoolbook, Century Schoolbook L, Georgia, serif;
-    font-size: 4vmin;
+    font-size: 5vmin;
     text-align: center;
     margin: 2rem 3rem 0;
     mix-blend-mode: overlay;
-    color: #fff;
+    color: #e4e0e0;
     font-weight: 100;
     padding-top: 5%;
   }
@@ -79,30 +79,42 @@
 }
 
 .survey-button {
-    background-color: #4CAF50; /* Green background */
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: flex;
-    font-size: 16px;
+    background-color: #007bff; /* Primary Blue */
+    color: rgb(207, 207, 207);
+    padding: 15px 30px;
     margin: 10px;
-    cursor: pointer;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 6px #0056b3;
+    transform: perspective(1px) translateY(0);
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    transition: all 0.3s ease;
+    text-decoration: none;
     border-radius: 8px;
     transition: background-color 0.3s, transform 0.3s;
 }
 
-.survey-button:hover {
-    background-color: #45a049; /* Darker green on hover */
-    transform: scale(1.05); /* Slightly increase size on hover */
+.survey-button:hover, .survey-button:focus, .survey-button:active {
+    box-shadow: 0 4px #004085; /* Slightly smaller shadow on hover */
+    transform: translateY(-2px); /* Move button up */
 }
-
 .privacy-notice {
     color: #fff;
     text-align: center;
     margin-top: 20px;
     font-style: italic;
+}
+
+.survey-button:hover:before, .survey-button:focus:before, .survey-button:active:before {
+    transform: scaleY(1);
+}
+
+ul{
+    color: #fff;
+    font-size: larger;
 }
 
   
