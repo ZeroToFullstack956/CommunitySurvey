@@ -24,7 +24,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    
+    padding-top: 20vh;
   }
   header {
     position: fixed;
@@ -56,7 +56,7 @@
     margin: 2rem 3rem 0;
     mix-blend-mode: overlay;
     color: #000000;
-    font-weight: 900;
+    font-weight: 200;
   }
   h3 { 
     font-family: Century Schoolbook, Century Schoolbook L, Georgia, serif;
