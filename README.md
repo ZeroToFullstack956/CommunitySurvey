@@ -13,13 +13,13 @@ This repository 📁 contains the code and resources for a simple yet impactful 
 - A lucky draw 🎰 will select a participant who provided a valid email and a complete survey.
 - The winner receives an email notification 📧 and must accept the offer within 14 calendar days.
 - The free website design offer expires after 14 days from the email date. ⏳
-- Participation is free! This is our thank-you 🙏 to the community for their valuable feedback.
+- Participation is free! This is our thank-you 🙏 to the community for their valuable feedback, raffle will be held at the end of the survey.
 
 ## 📈 Statistical Approach for Sample Size
 # - Target sample size for each group follows statistical guidelines:
 # np(1-p) ≥ 10
 # n < .05N or n ≥ 30
-# α = .01
+# α = .01  99% conficence interval
 
 
 - **n:** Sample size
@@ -30,7 +30,7 @@ This repository 📁 contains the code and resources for a simple yet impactful 
 
 Given quantitative variables and uncertain population distribution, we ensure \( n ≥ 30 \).
 
-To establish a 99% confidence interval for DEI viability:
+Construct a 99% confidence interval with 1% error for DEI viability:
 # - To determine the required sample size needed to acheive a error of 1% Ill use:
 # $$\hat{p}(1 - \hat{p})\left(\frac{z_{\alpha/2}}{E}\right)^2$$
 # $$\hat{p}(1 - \hat{p})$$ = .50 (due to not having any prior data)
