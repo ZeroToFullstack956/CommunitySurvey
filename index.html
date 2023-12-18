@@ -11,7 +11,7 @@
 	<main></main>
 <footer>
     <video id="dynamicVideo" loop muted autoplay> </video>
-        <source src="" />
+        <source src="https://www.robmillsarchitects.com/files/land/city/RMA_Web_land_city_2.mp4" type="video/mp4" />
 		<header>
 		<h1></h1>
 		  <nav>
@@ -40,7 +40,7 @@
 		  <h2>Thank you!</h2>
 		</div>
         <script src="//code.tidio.co/rga2rrmkxpfaskftz7s8povuz2ppveie.js" async></script>
-        <script async>
+        <script defer>
             var mo = document.getElementById("myModal");
             var btns = document.querySelectorAll(".myBtn");
             var span = document.getElementsByClassName("close")[0];
@@ -51,11 +51,11 @@
                 source.type = 'video/mp4';
                 var currentTime = Date.now();
                 if (currentTime % 2 === 0) {
-                    source.src=`https://www.robmillsarchitects.com/files/land/city/RMA_Web_land_city_1.mp4 type="video/mp4"` ;
+                    source.src="https://www.robmillsarchitects.com/files/land/city/RMA_Web_land_city_1.mp4" ;
                 } else if (currentTime % 3 === 0) {
-                    source.src=`https://www.robmillsarchitects.com/files/land/city/RMA_Web_land_city_2.mp4 type="video/mp4"` ;
+                    source.src="https://www.robmillsarchitects.com/files/land/city/RMA_Web_land_city_2.mp4" ;
                 } else {
-                    source.src=`https://www.robmillsarchitects.com/files/land/city/RMA_Web_land_city_3.mp4 type="video/mp4"` ;
+                    source.src="https://www.robmillsarchitects.com/files/land/city/RMA_Web_land_city_3.mp4" ;
                 }
                 video.appendChild(source);
                 video.load();
@@ -90,7 +90,7 @@
                 }
             };
 
-            window.onload = set;
+            // window.onload = set;
         </script>
 </body>
 </html>
