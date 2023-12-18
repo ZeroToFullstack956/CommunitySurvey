@@ -24,7 +24,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 22vh;
+    padding-top: calc(100vh - 50vh);
   }
   header {
     position: fixed;
@@ -139,7 +139,7 @@ ul{
     margin: 10% auto; /* 15% from the top and centered */
     padding: 10px;
     border: 1px solid #888;
-    width: 80vw; 
+    width: 75vw; 
     border-radius: 180px/140px;
     overflow: hidden;
   }
