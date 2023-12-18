@@ -10,7 +10,7 @@
 <body>
 	<main></main>
 <footer>
-    <video id="dynamicVideo" loop muted autoplay> <source src="https://www.robmillsarchitects.com/files/land/city/RMA_Web_land_city_2.mp4" type="video/mp4" /> </video>
+    <video id="dynamicVideo" loop muted autoplay playsinline> <source src="https://www.robmillsarchitects.com/files/land/city/RMA_Web_land_city_2.mp4" type="video/mp4" /> </video>
        
 		<header>
 		<h1></h1>
@@ -21,15 +21,12 @@
         <h3>Welcome to the Community Survey</h3>
         <ul>Please select the category that best describes you:</ul>
         <ul>After completing the survey you have the opportunity to regiter for a free website design or win $250:</ul>
-                <!-- Trigger/Open The Modal -->
         <div class="survey-links">
             <button id="myBtn" data-attr="student" class="survey-button myBtn">Start Student Survey</button>
             <button id="myBtn" data-attr="business" class="survey-button myBtn">Start Business Survey</button>
             <button id="myBtn" data-attr="community" class="survey-button myBtn">Start Community Member Survey</button>
         </div>
-                <!-- The Modal -->
         <div id="myModal" class="modal">
-            <!-- Modal content -->
             <div class="modal-content">
             <span class="close">&times;</span>
             <iframe src="https://forms.gle/yourFormID" frameborder="0" width="100%" height="500px"></iframe>
@@ -44,22 +41,6 @@
             var mo = document.getElementById("myModal");
             var btns = document.querySelectorAll(".myBtn");
             var span = document.getElementsByClassName("close")[0];
-
-            // function set() {
-            //     var video = document.getElementById('dynamicVideo');
-            //     var source = document.createElement('source');
-            //     source.type = 'video/mp4';
-            //     var currentTime = Date.now();
-            //     if (currentTime % 2 === 0) {
-            //         source.src="https://www.robmillsarchitects.com/files/land/city/RMA_Web_land_city_1.mp4" ;
-            //     } else if (currentTime % 3 === 0) {
-            //         source.src="https://www.robmillsarchitects.com/files/land/city/RMA_Web_land_city_2.mp4" ;
-            //     } else {
-            //         source.src="https://www.robmillsarchitects.com/files/land/city/RMA_Web_land_city_3.mp4" ;
-            //     }
-            //     video.appendChild(source);
-            //     video.load();
-            // }
             function m(event) {
             var dataType = event.currentTarget.getAttribute('data-attr');
             var iframeSrc = '';
@@ -89,8 +70,6 @@
                     mo.style.display = "none";
                 }
             };
-
-            // window.onload = set;
         </script>
 </body>
 </html>
