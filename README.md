@@ -5,7 +5,7 @@ This repository 📁 contains the code and resources for a simple yet impactful 
 
 **🔒 Confidentiality and Incentive:**
 - All survey contributors will remain anonymous. 🕵️‍♂️
-- Personal information is only for the raffle draw, offering a free website design of up to 6 pages. 🎨
+- Personal information is only for the raffle draw, offering a free website design of up to 6 pages or $250.00. 🎨
 - Raffle entry requires one completed survey. ✔️
 - The survey concludes after reaching the target number of responses. 🎯
 
@@ -19,7 +19,8 @@ This repository 📁 contains the code and resources for a simple yet impactful 
 # - Target sample size for each group follows statistical guidelines:
 # np(1-p) ≥ 10
 # n < .05N or n ≥ 30
-# α = .01  99% conficence interval
+# α = .01 , 99% conficence interval
+# E = 1%
 
 
 - **n:** Sample size
@@ -31,7 +32,7 @@ This repository 📁 contains the code and resources for a simple yet impactful 
 Given quantitative variables and uncertain population distribution, we ensure \( n ≥ 30 \).
 
 Construct a 99% confidence interval with 1% error for DEI viability:
-# - To determine the required sample size needed to acheive a error of 1% Ill use:
+# - To determine the required sample size needed Ill use:
 # $$\hat{p}(1 - \hat{p})\left(\frac{z_{\alpha/2}}{E}\right)^2$$
 # $$\hat{p}(1 - \hat{p})$$ = .50 (due to not having any prior data)
 
@@ -40,21 +41,21 @@ Construct a 99% confidence interval with 1% error for DEI viability:
 
 # In this case we are dealing with quantitative variables and will ensure n >= 30 since the possibility of verifying the population to be normally distributed is unlikley to be possible. 
 
-# I will construct a 99% confidence interval to determine where the results from the survey resolve in order to determine the viability of building (DEI). 
+# I will construct a 99% confidence interval to determine where the results from the survey resolve in order to determine (DEI) viability. 
 # Well use the normal probability density function expression:
 # $$\int \frac{1}{\sigma\sqrt{2\pi}} e^{-\frac{1}{2}\left(\frac{x - \mu}{\sigma}\right)^2} \,dx $$
-# we will take that over the 99% interval to acheive:
-#  $$\int_{-\infty}^{x_1} \frac{1}{\sigma\sqrt{2\pi}} e^{-\frac{1}{2}\left(\frac{x - \mu}{\sigma}\right)^2} \, dx - \int_{x_1}^{x_2} \frac{1}{\sigma\sqrt{2\pi}} e^{-\frac{1}{2}\left(\frac{x - \mu}{\sigma}\right)^2} \, dx$$
-# - The resulting calculation we pull from the Statistician's z-table calculation: 2.58 📊
+# I will take that over a 99% interval:
+# $$ \int_{x_1}^{x_2} \frac{1}{\sigma\sqrt{2\pi}} e^{-\frac{1}{2}\left(\frac{x - \mu}{\sigma}\right)^2} \, dx - \int_{-\infty}^{x_1} \frac{1}{\sigma\sqrt{2\pi}} e^{-\frac{1}{2}\left(\frac{x - \mu}{\sigma}\right)^2} \, dx$$
+# - The resulting calculation can be confirmed against the Statistician's z-table value for α/2 = .005 => z = 2.58 📊
 
 # $$\left(\frac{2.58}{.01}\right)^2$$ = 66564
-# and finally, we assume $$\hat{p}$$ = 0.5 since we have no prior data: we air on the side of prudence
+# and finally, we assume $$\hat{p}$$ = 0.5 since we have no prior data:
 # n = .5(66564)
 # n = 33282
 
 
 **Required Sample Size:**
-33,282 surveys for 99% confidence level. 🎯
+33,282 surveys is our target. 🎯
 
 ## 🌈 Features
 - **🖥 Landing Page**: Engaging webpage introducing the survey and encouraging participation.

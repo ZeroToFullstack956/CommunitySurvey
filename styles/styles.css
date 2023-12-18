@@ -55,7 +55,7 @@
     text-align: center;
     margin: 2rem 3rem 0;
     mix-blend-mode: overlay;
-    color: #000000;
+    color: #ffffff;
     font-weight: 200;
   }
   h3 { 
@@ -80,13 +80,14 @@
 
 .survey-button {
     background-color: #007bff; /* Primary Blue */
+    font-family: Century Schoolbook, Century Schoolbook L, Georgia, serif;
     color: rgb(207, 207, 207);
     padding: 15px 30px;
     margin: 10px;
     font-size: 18px;
-    border: none;
+    border: 1px solid;
     border-radius: 5px;
-    box-shadow: 0 6px #0056b3;
+    box-shadow: 0 4px #0056b3;
     transform: perspective(1px) translateY(0);
     position: relative;
     overflow: hidden;
@@ -100,6 +101,7 @@
 .survey-button:hover, .survey-button:focus, .survey-button:active {
     box-shadow: 0 4px #004085; /* Slightly smaller shadow on hover */
     transform: translateY(-2px); /* Move button up */
+    color: aqua;
 }
 .privacy-notice {
     color: #fff;
@@ -116,5 +118,43 @@ ul{
     color: #fff;
     font-size: larger;
 }
-
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: rgba(183, 179, 179, 0.8); 
+    margin: 10% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80vw; 
+    border-radius: 180px/140px;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
   
