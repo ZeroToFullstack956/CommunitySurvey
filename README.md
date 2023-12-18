@@ -5,7 +5,7 @@ This repository 📁 contains the code and resources for a simple yet impactful 
 
 **🔒 Confidentiality and Incentive:**
 - All survey contributors will remain anonymous. 🕵️‍♂️
-- Personal information is only for the raffle draw, offering a free website design. 🎨
+- Personal information is only for the raffle draw, offering a free website design of up to 6 pages. 🎨
 - Raffle entry requires one completed survey. ✔️
 - The survey concludes after reaching the target number of responses. 🎯
 
